@@ -8,7 +8,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // use res.render to load up an ejs view file
 
-let myTypeServer = "9️⃣ The Peacemaker ✌🏻";
+let myTypeServer = "The Enthusiast";
 
 app.get('/', function(req, res) {
 
@@ -17,17 +17,13 @@ app.get('/', function(req, res) {
     myTypeClient: myTypeServer 
 
   });
-  
 });
-
 
 app.get('/send', function (req, res) {
   
     res.send('Hello World from Express <br><a href="/">home</a>')
 })
 
-// app.listen(3000)
-
 app.listen(port, () => {
-  console.log(`nov app listening on port ${port}`)
+  console.log(`the government listening on port ${port}`)
 })
